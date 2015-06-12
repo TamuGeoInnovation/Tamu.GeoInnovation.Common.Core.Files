@@ -1,0 +1,8 @@
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Files\build\v1.1\bin\AnyCPU\release\USC.GISResearchLab.Common.Core.Files.dll
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Files\src\obj\Release\USC.GISResearchLab.Common.Core.Files.dll
+C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Files\src\obj\Release\Common.Core.Files.csprojResolveAssemblyReference.cache
+C:\DevBuild\Tamu\GeoInnovation\Common\Core\Forms\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Files.dll
+C:\DevBuild\Tamu\GeoInnovation\Common\Core\Files\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Files.dll
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Files\Src\Main\obj\Release\Common.Core.Files.csprojResolveAssemblyReference.cache
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Files\Src\Main\obj\Release\Tamu.GeoInnovation.Common.Core.Files.dll
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Files\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Files.dll

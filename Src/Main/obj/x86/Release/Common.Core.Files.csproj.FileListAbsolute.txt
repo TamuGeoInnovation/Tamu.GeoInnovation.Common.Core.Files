@@ -1,0 +1,2 @@
+C:\DevBuild\Tamu\GeoInnovation\Common\Core\Files\build\1.0.0\release\Tamu.GeoInnovation.Common.Core.Files.dll
+C:\DevSource\Tamu\GeoInnovation\Common\Core\Files\Src\Main\obj\x86\Release\Tamu.GeoInnovation.Common.Core.Files.dll
