@@ -1,5 +1,0 @@
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Files\build\v1.1\bin\x86\debug\USC.GISResearchLab.Common.Core.Files.dll
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Files\build\v1.1\bin\x86\debug\USC.GISResearchLab.Common.Core.Files.pdb
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Files\src\obj\x86\Debug\USC.GISResearchLab.Common.Core.Files.dll
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Files\src\obj\x86\Debug\USC.GISResearchLab.Common.Core.Files.pdb
-C:\Dev\VS2008DotNetDevelopment\USC\GISResearchLab\Common\Core.Files\src\obj\x86\Debug\Common.Core.Files.csprojResolveAssemblyReference.cache
