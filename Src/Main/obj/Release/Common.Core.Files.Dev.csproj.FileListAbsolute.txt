@@ -1,6 +1,6 @@
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Files.dll
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csprojResolveAssemblyReference.cache
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Tamu.GeoInnovation.Common.Core.Files.dll
 D:\DevSource\Tamu\GeoInnovation\Common.Core.Files\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Files.dll
 D:\DevSource\Tamu\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csprojResolveAssemblyReference.cache
 D:\DevSource\Tamu\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Tamu.GeoInnovation.Common.Core.Files.dll
+C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Files.dll
+C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csprojResolveAssemblyReference.cache
+C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Tamu.GeoInnovation.Common.Core.Files.dll
