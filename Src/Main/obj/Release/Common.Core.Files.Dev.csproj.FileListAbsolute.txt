@@ -6,5 +6,7 @@ C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\build\1.0.0\AnyCPU\release\Sql
 C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\build\1.0.0\AnyCPU\release\SqlServerTypes\x86\msvcr100.dll
 C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\build\1.0.0\AnyCPU\release\SqlServerTypes\x86\SqlServerSpatial110.dll
 C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Files.dll
-C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csprojResolveAssemblyReference.cache
 C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Tamu.GeoInnovation.Common.Core.Files.dll
+C:\DevSource\TAMU\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csprojAssemblyReference.cache
+C:\DevSource\TAMU\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csproj.CoreCompileInputs.cache
+C:\DevSource\TAMU\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csproj.CopyComplete
