@@ -8,15 +8,15 @@ using USC.GISResearchLab.Common.Utils.Strings;
 
 namespace USC.GISResearchLab.Common.Utils.Directories
 {
-	/// <summary>
-	/// Summary description for DirectoryUtils.
-	/// </summary>
-	public class DirectoryUtils
-	{
-		public DirectoryUtils()
-		{
-		}
-        
+    /// <summary>
+    /// Summary description for DirectoryUtils.
+    /// </summary>
+    public class DirectoryUtils
+    {
+        public DirectoryUtils()
+        {
+        }
+
         public static bool testPath(string path, bool createIfNeeded, bool throwError)
         {
             bool ret = true;
@@ -69,15 +69,15 @@ namespace USC.GISResearchLab.Common.Utils.Directories
         }
 
 
-		public static bool DirectoryExists(string path)
-		{
-			bool ret = false;
-			if (!String.IsNullOrEmpty(path))
-			{
+        public static bool DirectoryExists(string path)
+        {
+            bool ret = false;
+            if (!String.IsNullOrEmpty(path))
+            {
                 ret = Directory.Exists(path);
-			}
-			return ret;
-		}
+            }
+            return ret;
+        }
 
         public static bool CopyDirectory(string sourceDirectory, string targetDirectory)
         {
@@ -103,58 +103,58 @@ namespace USC.GISResearchLab.Common.Utils.Directories
 
         public static bool CopyAll(DirectoryInfo source, DirectoryInfo target, bool ignoreError, BackgroundWorker backgroundWorker)
         {
-             bool ret = false;
-             try
-             {
-                 if (backgroundWorker != null && backgroundWorker.CancellationPending)
-                 {
-                  
-                     return false;
-                 }
-                 else
-                 {
-                     if (!Directory.Exists(target.FullName))
-                     {
-                         Directory.CreateDirectory(target.FullName);
-                     }
+            bool ret = false;
+            try
+            {
+                if (backgroundWorker != null && backgroundWorker.CancellationPending)
+                {
 
-                     foreach (FileInfo fi in source.GetFiles())
-                     {
-                         if (backgroundWorker != null && backgroundWorker.CancellationPending)
-                         {
-                          
-                             return false;
-                         }
-                         else
-                         {
-                             
-                             fi.CopyTo(Path.Combine(target.ToString(), fi.Name), true);
-                         }
-                     }
+                    return false;
+                }
+                else
+                {
+                    if (!Directory.Exists(target.FullName))
+                    {
+                        Directory.CreateDirectory(target.FullName);
+                    }
 
-                     foreach (DirectoryInfo diSourceSubDir in source.GetDirectories())
-                     {
-                         if (backgroundWorker != null && backgroundWorker.CancellationPending)
-                         {
-                           
-                             return false;
-                         }
-                         else
-                         {
-                             DirectoryInfo nextTargetSubDir = target.CreateSubdirectory(diSourceSubDir.Name);
-                            
-                         }
-                     }
-                 }
-             }
-             catch (Exception e)
-             {
-               
-                 if (!ignoreError)
-                 {
-                     throw new Exception("An error occurred in CopyAll", e);
-                 }
-             }
+                    foreach (FileInfo fi in source.GetFiles())
+                    {
+                        if (backgroundWorker != null && backgroundWorker.CancellationPending)
+                        {
+
+                            return false;
+                        }
+                        else
+                        {
+
+                            fi.CopyTo(Path.Combine(target.ToString(), fi.Name), true);
+                        }
+                    }
+
+                    foreach (DirectoryInfo diSourceSubDir in source.GetDirectories())
+                    {
+                        if (backgroundWorker != null && backgroundWorker.CancellationPending)
+                        {
+
+                            return false;
+                        }
+                        else
+                        {
+                            DirectoryInfo nextTargetSubDir = target.CreateSubdirectory(diSourceSubDir.Name);
+
+                        }
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+
+                if (!ignoreError)
+                {
+                    throw new Exception("An error occurred in CopyAll", e);
+                }
+            }
             return ret;
         }
 
@@ -258,8 +258,8 @@ namespace USC.GISResearchLab.Common.Utils.Directories
         }
 
         public static ArrayList GetSubDirectories(string path, bool recursive, ArrayList nameMask)
-		{
-			ArrayList ret = null;
+        {
+            ArrayList ret = null;
 
             SearchOption searchOption;
 
@@ -272,8 +272,8 @@ namespace USC.GISResearchLab.Common.Utils.Directories
                 searchOption = SearchOption.TopDirectoryOnly;
             }
 
-			if (DirectoryExists(path))
-			{
+            if (DirectoryExists(path))
+            {
                 if (nameMask == null)
                 {
                     string[] subDirs = Directory.GetDirectories(path, "*", searchOption);
@@ -298,12 +298,12 @@ namespace USC.GISResearchLab.Common.Utils.Directories
                             {
                                 ret.AddRange(subDirs);
                             }
-                        }           
+                        }
                     }
                 }
-			}
-			return ret;
-		}
+            }
+            return ret;
+        }
 
         public static List<string> GetSubDirectoriesAsStringList(string path)
         {
@@ -401,7 +401,7 @@ namespace USC.GISResearchLab.Common.Utils.Directories
         public static long GetDirectorySize(DirectoryInfo d, bool includeSubdirectories)
         {
             long Size = 0;
-            
+
             // Add file sizes.
             FileInfo[] fis = d.GetFiles();
             foreach (FileInfo fi in fis)
@@ -422,10 +422,10 @@ namespace USC.GISResearchLab.Common.Utils.Directories
         }
 
 
-		public static ArrayList getFileList(string path)
-		{
-			return getFileList(path, null, false);
-		}
+        public static ArrayList getFileList(string path)
+        {
+            return getFileList(path, null, false);
+        }
 
         public static ArrayList getFileList(string path, string typeFilter, bool useTypeFilter)
         {
@@ -433,8 +433,8 @@ namespace USC.GISResearchLab.Common.Utils.Directories
         }
 
         public static ArrayList getFileList(string path, string typeFilter, bool useTypeFilter, SearchOption SearchOption)
-		{
-			ArrayList ret = new ArrayList();
+        {
+            ArrayList ret = new ArrayList();
 
             if (DirectoryExists(path))
             {
@@ -453,8 +453,8 @@ namespace USC.GISResearchLab.Common.Utils.Directories
                     ret = new ArrayList(files);
                 }
             }
-			return ret;
-		}
+            return ret;
+        }
 
         public static List<string> GetFileListAsStringList(string path)
         {
@@ -490,14 +490,14 @@ namespace USC.GISResearchLab.Common.Utils.Directories
             return ret;
         }
 
-        
+
 
         public static string GetRandomFile(string path, string typeFilter)
         {
             return GetRandomFile(path, new string[] { typeFilter });
         }
 
-        public static string GetRandomFile(string path, string [] typeFilters)
+        public static string GetRandomFile(string path, string[] typeFilters)
         {
             string ret = "";
 
@@ -586,7 +586,7 @@ namespace USC.GISResearchLab.Common.Utils.Directories
         }
 
 
-	}
+    }
 
 
 }

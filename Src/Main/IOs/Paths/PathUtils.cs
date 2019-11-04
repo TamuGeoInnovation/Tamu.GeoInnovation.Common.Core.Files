@@ -51,7 +51,7 @@ namespace USC.GISResearchLab.Common.Core.IOs.Paths
                         break;
                     }
                 }
-                
+
             }
             return ret;
 

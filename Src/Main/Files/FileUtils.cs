@@ -1,16 +1,16 @@
 using System;
 using System.IO;
+using System.Reflection;
 using USC.GISResearchLab.Common.Utils.Directories;
 using USC.GISResearchLab.Common.Utils.Strings;
-using System.Reflection;
 
 namespace USC.GISResearchLab.Common.Utils.Files
 {
-	/// <summary>
-	/// Summary description for FileUtils.
-	/// </summary>
-	public class FileUtils
-	{
+    /// <summary>
+    /// Summary description for FileUtils.
+    /// </summary>
+    public class FileUtils
+    {
 
         public static string GetFirstSubdirectoryPathFromPattern(string basePath, string patternPath, string fileName)
         {
@@ -163,7 +163,7 @@ namespace USC.GISResearchLab.Common.Utils.Files
                     fileStream.Close();
                     ret = true;
                 }
-            } 
+            }
             catch (Exception e)
             {
                 throw new Exception("Error writing bytes to file: " + filePath, e);
@@ -272,11 +272,11 @@ namespace USC.GISResearchLab.Common.Utils.Files
             OverwriteTextFile(path, contents);
         }
 
-		public static bool FileExists(string path)
-		{
-			bool ret = false;
-			if (!StringUtils.IsEmpty(path))
-			{
+        public static bool FileExists(string path)
+        {
+            bool ret = false;
+            if (!StringUtils.IsEmpty(path))
+            {
 
                 try
                 {
@@ -290,9 +290,9 @@ namespace USC.GISResearchLab.Common.Utils.Files
                 {
                     throw new Exception("Error in FileExists() - " + e.Message, e);
                 }
-			}
-			return ret;
-		}
+            }
+            return ret;
+        }
 
         public static string GetFileNameWithoutExtension(string filePath)
         {
@@ -346,8 +346,8 @@ namespace USC.GISResearchLab.Common.Utils.Files
         }
 
 
-		public static string GetDirectoryPath(string filePath, bool includeTrailingSlash)
-		{
+        public static string GetDirectoryPath(string filePath, bool includeTrailingSlash)
+        {
             string ret = "";
             if (filePath != null)
             {
@@ -369,7 +369,7 @@ namespace USC.GISResearchLab.Common.Utils.Files
                 throw new Exception("FileUtils.GetDirectoryPath() error: filePath is null");
             }
             return ret;
-		}
+        }
 
         public static string GetDirectoryName(string filePath)
         {
@@ -555,14 +555,14 @@ namespace USC.GISResearchLab.Common.Utils.Files
             return ret;
         }
 
-		public static string TrimExtension(string fileName, string ext)
-		{
-			if (fileName.ToLower().IndexOf(ext) != -1)
-			{
-				fileName = fileName.Substring(0, fileName.ToLower().IndexOf(ext));
-			}
-			return fileName;
-		}
+        public static string TrimExtension(string fileName, string ext)
+        {
+            if (fileName.ToLower().IndexOf(ext) != -1)
+            {
+                fileName = fileName.Substring(0, fileName.ToLower().IndexOf(ext));
+            }
+            return fileName;
+        }
 
         public static string GetExtension(string filePath, bool includePreceedingPeriod)
         {
@@ -587,10 +587,10 @@ namespace USC.GISResearchLab.Common.Utils.Files
             return ret;
         }
 
-		public static string GetExtension(string filePath)
-		{
+        public static string GetExtension(string filePath)
+        {
             return Path.GetExtension(filePath);
-		}
+        }
 
         public static bool DeleteShapefile(string shapefilePath)
         {
@@ -638,27 +638,27 @@ namespace USC.GISResearchLab.Common.Utils.Files
             return ret;
         }
 
-		public static bool DeleteFile(string path)
-		{
+        public static bool DeleteFile(string path)
+        {
             bool ret = false;
-			try
-			{
-				FileInfo file = new FileInfo(path);
-					
-				if (file.Exists)
-				{
-					file.Delete();
-				}
+            try
+            {
+                FileInfo file = new FileInfo(path);
+
+                if (file.Exists)
+                {
+                    file.Delete();
+                }
 
                 ret = true;
-			}
-			catch(Exception e)
-			{
-				throw new Exception("Error occured while trying to delete file: " + path, e);
-			}
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Error occured while trying to delete file: " + path, e);
+            }
 
             return ret;
-		}
+        }
 
         public static void AppendText(string fileName, string s)
         {
@@ -695,20 +695,20 @@ namespace USC.GISResearchLab.Common.Utils.Files
             }
         }
 
-		public static void AppendTextFile(string fileName, string s)
-		{
-			try
-			{
-				StreamWriter writer = new StreamWriter(fileName, true);
-				writer.WriteLine(s);
-				writer.Close();
-				
-			}
-			catch(Exception e)
-			{
-				throw new Exception("An error occured appending to file: '" + fileName + "' - '" + s + "'", e);
-			}
-		}
+        public static void AppendTextFile(string fileName, string s)
+        {
+            try
+            {
+                StreamWriter writer = new StreamWriter(fileName, true);
+                writer.WriteLine(s);
+                writer.Close();
+
+            }
+            catch (Exception e)
+            {
+                throw new Exception("An error occured appending to file: '" + fileName + "' - '" + s + "'", e);
+            }
+        }
 
         public static void OverwriteTextFile(string fileName, string s)
         {
@@ -754,6 +754,6 @@ namespace USC.GISResearchLab.Common.Utils.Files
 
         }
 
-        
+
     }
 }
