@@ -7,3 +7,7 @@ C:\DevSource\Tamu\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Tamu.GeoI
 C:\DevSource\TAMU\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csprojAssemblyReference.cache
 C:\DevSource\TAMU\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csproj.CoreCompileInputs.cache
 C:\DevSource\TAMU\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csproj.CopyComplete
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Files\build\1.0.0\AnyCPU\release\Tamu.GeoInnovation.Common.Core.Files.dll
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csprojAssemblyReference.cache
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Common.Core.Files.Dev.csproj.CopyComplete
+D:\DevSource\TAMU\GeoInnovation\Common.Core.Files\Src\Main\obj\Release\Tamu.GeoInnovation.Common.Core.Files.dll
